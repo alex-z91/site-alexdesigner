@@ -1,0 +1,96 @@
+/* styles.css */
+body {
+    background-image: url(../src/imagens/dark-abstract-background.jpg);
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: monospace, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+body img {
+    align-items: center;
+    justify-content: center;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    align-items: center;
+}
+
+header {
+    text-transform: uppercase;
+    color: #fff;
+    padding: 1em 0;
+    text-align: center;
+}
+
+nav ul {
+    cursor: pointer;
+    text-transform: uppercase;
+    list-style: none;
+    padding: 0;
+}
+
+nav ul :hover {
+    color: rgb(212, 152, 78);
+    transition: color 0.35s ease-in-out;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 1em;
+}
+
+nav ul li a {
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: none;
+}
+
+section {
+    background-size: contain;
+    text-align: center;
+    font-family: monospace, sans-serif;
+    padding: 2em;
+    color: #fff;
+}
+
+section h2 {
+    text-transform: uppercase;
+}
+
+section h3 {
+    color: rgb(212, 152, 78);
+    text-transform: uppercase;
+}
+
+section p {
+    font-family: sans-serif;
+}
+
+.descricao {
+    max-width: 600px; /* Limite de largura */
+    margin: 0 auto; /* Centraliza o texto horizontalmente */
+    text-align: center; /* Justifica o texto */
+    text-wrap: balance; /* Equilibra as linhas de texto */
+}
+
+#projetos .projeto {
+    margin-bottom: 1em;
+}
+
+footer {
+    font-family: unset;
+    font-size: 55%;
+    text-align: center;
+    padding: 1em 0;
+    background: #33333362;
+    color: #fff;
+    position:relative;
+    width: 100%;
+    bottom: 0;
+}

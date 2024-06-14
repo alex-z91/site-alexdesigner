@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Meu Portfólio</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
 </head>
 <body>
     <header>
-        <h1>Meu Portfólio</h1>
+        <h1><img src="/src/imagens/asas.svg" alt="logo Alex Guimarães"></h1>
         <nav>
             <ul>
                 <li><a href="#sobre">Sobre</a></li>
@@ -17,12 +17,14 @@
             </ul>
         </nav>
     </header>
-    
+
     <section id="sobre">
         <h2>Sobre Mim</h2>
-        <p>Descrição sobre você.</p>
+        <p id="descricaoSobreMim" class="descricao">Bem-vindo! Sou Alex Guimarães. Sou especializado em criar soluções visuais criativas e funcionais para empresas de todos os tamanhos. Com anos de experiência no mercado, minha missão é transformar suas ideias em realidade, garantindo sempre a máxima qualidade e inovação em cada projeto.</p>
+        <p class="descricao">Meus serviços incluem design gráfico, desenvolvimento de websites, branding e muito mais. Trabalhamos com uma abordagem personalizada, entendendo as necessidades únicas de cada cliente e oferecendo soluções que realmente fazem a diferença.</p>
+        <p class="descricao">Vamos juntos construir algo incrível!</p>
     </section>
-    
+
     <section id="projetos">
         <h2>Projetos</h2>
         <div class="projeto">
@@ -35,22 +37,24 @@
         </div>
         <!-- Adicione mais projetos conforme necessário -->
     </section>
-    
+
     <section id="contato">
         <h2>Contato</h2>
-        <form>
-            <label for="nome">Nome:</label>
-            <input type="text" id="nome" name="nome">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
-            <label for="mensagem">Mensagem:</label>
-            <textarea id="mensagem" name="mensagem"></textarea>
-            <button type="submit">Enviar</button>
-        </form>
+        <div class="form-wrapper">
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem"></textarea>
+                <button type="submit">Enviar</button>
+            </form>
+        </div>
     </section>
-    
+
     <footer>
-        <p>&copy; 2024 Meu Nome</p>
+        <p>&copy; 2024 ALEX GUIMARAES | DESIGNER & DESENVOLVEDOR FULLSTACK</p>
     </footer>
 </body>
 </html>
