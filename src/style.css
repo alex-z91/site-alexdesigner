@@ -1,31 +1,66 @@
 /* styles.css */
 body {
-    background-image: url(../src/imagens/dark-abstract-background.jpg);
+    background-color: black;
+    display: flex;
+    flex-direction: column;
     align-items: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     font-family: monospace, sans-serif;
     margin: 0;
-    padding: 0;
+    padding: 10px;
     line-height: 1.6;
+    scroll-behavior: smooth;
 }
 
-body img {
-    align-items: center;
-    justify-content: center;
-}
-
-header img {
-    width: 50px;
-    height: auto;
-    align-items: center;
+head {
+    
+    text-align: right;
 }
 
 header {
     text-transform: uppercase;
     color: #fff;
-    padding: 1em 0;
+    padding: 2em 0;
     text-align: center;
+}
+
+header img {
+    width: 50px;
+    height: auto;
+    margin: 2px auto;
+}
+
+.subtituloDaPagina {
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 2em;
+    text-align: center;
+}
+
+.botaoOrcamento {
+    font-family: sans-serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+    border: none;
+    padding: 1em;
+    margin: 2em 0;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.25s ease-in-out;
+}
+
+.botaoOrcamento:hover {
+    background-color: darkgoldenrod;
 }
 
 nav ul {
@@ -33,11 +68,7 @@ nav ul {
     text-transform: uppercase;
     list-style: none;
     padding: 0;
-}
-
-nav ul :hover {
-    color: rgb(212, 152, 78);
-    transition: color 0.35s ease-in-out;
+    text-align: right;
 }
 
 nav ul li {
@@ -46,26 +77,33 @@ nav ul li {
 }
 
 nav ul li a {
-    text-transform: uppercase;
     color: #fff;
     text-decoration: none;
+    transition: color 0.35s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: rgb(212, 152, 78);
 }
 
 section {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-size: contain;
     text-align: center;
-    font-family: monospace, sans-serif;
     padding: 2em;
     color: #fff;
 }
 
-section h2 {
+section h2, section h3 {
     text-transform: uppercase;
 }
 
 section h3 {
     color: rgb(212, 152, 78);
-    text-transform: uppercase;
 }
 
 section p {
@@ -73,10 +111,11 @@ section p {
 }
 
 .descricao {
-    max-width: 600px; /* Limite de largura */
-    margin: 0 auto; /* Centraliza o texto horizontalmente */
-    text-align: center; /* Justifica o texto */
-    text-wrap: balance; /* Equilibra as linhas de texto */
+    font-size: 13px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: center;
+    text-wrap: balance;
 }
 
 #projetos .projeto {
@@ -90,7 +129,5 @@ footer {
     padding: 1em 0;
     background: #33333362;
     color: #fff;
-    position:relative;
     width: 100%;
-    bottom: 0;
 }
